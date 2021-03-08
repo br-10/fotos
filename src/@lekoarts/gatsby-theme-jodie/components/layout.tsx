@@ -19,14 +19,14 @@ const Layout = ({ children, color = `white` }: LayoutProps) =>{
   const [zu,setZu]= useState(false)
 
   useEffect(()=>{
-    if(!typeof window){
+    if(!typeof window) return
       let l = window.localStorage.getItem("f-einverstanden")
       if(l==="undefined" || l===null){
         setZu(false)
       }else(
         setZu(true)
       )
-    }
+   
    
     
   })
