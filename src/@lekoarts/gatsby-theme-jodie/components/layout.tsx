@@ -32,7 +32,7 @@ const Layout = ({ children, color = `white` }: LayoutProps) =>{
     
   },[])
   function ma(){
-    console.log(window)
+   
     if(!typeof window) return
     if(typeof window){
       setZu(true)
