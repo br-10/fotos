@@ -20,20 +20,25 @@ const Layout = ({ children, color = `white` }: LayoutProps) =>{
 
   useEffect(()=>{
     if(!typeof window) return
+    if(typeof window){
       let l = window.localStorage.getItem("f-einverstanden")
       if(l==="undefined" || l===null){
         setZu(false)
       }else(
         setZu(true)
       )
-   
+      }
    
     
-  })
+  },[])
   function ma(){
+    console.log(window)
     if(!typeof window) return
-    setZu(true)
-    window.localStorage.setItem("f-einverstanden","true")
+    if(typeof window){
+      setZu(true)
+      window.localStorage.setItem("f-einverstanden","true")
+    }
+    
   }
   const MyDaten = () => {
   
