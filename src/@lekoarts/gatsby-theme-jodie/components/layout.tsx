@@ -31,13 +31,14 @@ const Layout = ({ children, color = `white` }: LayoutProps) =>{
    
     
   },[])
+
   function ma(){
    
-    if(!typeof window) return
-    if(typeof window){
+    if(!typeof window) return null
+   
       setZu(true)
       window.localStorage.setItem("f-einverstanden","true")
-    }
+    
     
   }
   const MyDaten = () => {
@@ -62,7 +63,7 @@ const Layout = ({ children, color = `white` }: LayoutProps) =>{
       <p>Bitten informieren Sie sich vor der Nutzung über unsere Datenschutzbestimmungen</p>
       <Link to="/datenschutz" >Datenschutzbestimmungen</Link><br/>
       <button onClick={
-        ma()
+        ()=>ma()
       }>
         Ich erkläre mein Einverständnis ...
       </button>
