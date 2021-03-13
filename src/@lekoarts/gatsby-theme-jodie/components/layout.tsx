@@ -47,7 +47,7 @@ const Layout = ({ children, color = `white` }: LayoutProps) =>{
       <div sx={{
         position:'absolute',
         top:120,
-        left:40,
+        left:35,
         padding:10,
         width:'320px',
         background: 'black',
@@ -82,6 +82,7 @@ const Layout = ({ children, color = `white` }: LayoutProps) =>{
           fontSize: `18px`,
           WebkitTextSizeAdjust: `100%`,
         },
+      
         img: {
           borderStyle: `none`,
         },

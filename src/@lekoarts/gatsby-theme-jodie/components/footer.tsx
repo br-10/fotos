@@ -33,35 +33,40 @@ const Footer = ({ bg }: { bg: string }) => {
         variant: `footer`,
       }}
     >
-      <div>
-        &copy; {new Date().getFullYear()} by {author}.
-      </div>
+      
       <div>
         <GatsbyLink
           aria-label="Link zum Impressum"
           to="/impressum"
         >
+         
           Impressum
         </GatsbyLink>
-        {' '} {' '}
+     
         <GatsbyLink
           aria-label="Link zum Datenschutz"
           to="/datenschutz"
         >
+           <br/>
           Datenschutz
         </GatsbyLink>
-        {' '} {' '}
+      
+        <br/>
         <GatsbyLink
           aria-label="Link zum Kontakt"
           to="/kontakt"
         >
           Kontakt
         </GatsbyLink>
-       <br/>
+       
+      </div>
+      <div>
+        &copy; {new Date().getFullYear()} by K.O.M
+      </div>
+      <div><br/>
         <Link aria-label="Link to the theme author's website" href="https://www.lekoarts.de/en">
           Theme by LekoArts
-        </Link>
-      </div>
+        </Link></div>
     </footer> 
   )
 }

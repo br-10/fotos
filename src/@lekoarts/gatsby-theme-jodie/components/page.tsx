@@ -5,7 +5,7 @@ import { PageProps } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import Layout from "./layout"
 import SEO from "./seo"
-
+import Img from 'gatsby-image'
 type DataProps = {
   page: {
     title: string
@@ -38,6 +38,7 @@ const Page: React.FC<PageProps<DataProps>> = ({ data: { page }, location }) => (
       }}
       data-testid="page-content"
     >
+      <img width="100%" height="auto" src={page.cover.childImageSharp.resize.src} />
       <MDXRenderer>{page.body}</MDXRenderer>
     </div>
   </Layout>

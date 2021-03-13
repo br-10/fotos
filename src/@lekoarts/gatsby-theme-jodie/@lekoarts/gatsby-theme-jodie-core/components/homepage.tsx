@@ -20,15 +20,7 @@ type DataProps = {
       __typename: "MdxPage"
     }[]
   }
-  texte: {
-    nodes: {
-      slug: string
-      title: string
-      cover: ChildImageSharp
-      __typename: "MdxPage"
-    }[]
-  }
-}
+ 
 
 export default function JodieCoreHomepage({ children, ...props }: PageProps<DataProps>) {
   return <Homepage {...props}>{children}</Homepage>

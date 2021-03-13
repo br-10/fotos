@@ -35,6 +35,7 @@ const Project: React.FC<PageProps<DataProps>> = ({ data: { projects }, location 
     >
       {projects.nodes.length > 0 ? (
         projects.nodes.map((project) => (
+          project.slug!=="/texte" &&
           <GridItem to={project.slug} key={project.slug} data-testid={project.shortTitle}>
             
             <Img fluid={project.cover.childImageSharp.fluid} />

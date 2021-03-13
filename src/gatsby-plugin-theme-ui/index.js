@@ -21,6 +21,7 @@ const theme = merge(tailwind, {
     text: tailwind.colors.gray[9],
     textMuted: `#46505f`,
     textMutedLight: `#a0aab8`,
+    vera:`#ff0`,
   },
   sidebar: {
     normal: `320px`,

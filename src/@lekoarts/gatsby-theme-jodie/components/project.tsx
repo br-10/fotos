@@ -66,15 +66,15 @@ const Project: React.FC<PageProps<DataProps>> = ({ data: { project, images }, lo
         <MDXRenderer>{project.body}</MDXRenderer>
       </div>
     </div>
-    <div sx={{ backgroundColor: transparentize(0.9, project.color) }}>
+    <div sx={{ backgroundColor: transparentize(0.99, 'gray') }}>
       <div sx={{ variant: `content.imageList` }}>
         {images.nodes.map((image,index) => {
           return(
-          <div key={index}>
+          <div sx={{pb:1}} key={index}>
           
           <Img  alt={image.name} fluid={image.childImageSharp.fluid} />
           
-          {daten&&<div sx={{textAlign:"center",position:"relative",zIndex:100,top:'-60px'}}>{daten[index].titel}</div>
+          {daten&&<div sx={{textAlign:"center",marginTop:'-60px',pb:[2,2,3,4]}}>{daten[index].titel}</div>
          }
           </div>
         )})}

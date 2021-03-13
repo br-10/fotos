@@ -4,7 +4,12 @@ require(`dotenv`).config({
 
 module.exports = {
   siteMetadata: {
-    siteTitleAlt: `Kalik-Mayence-Fotografie`,
+    title: 'Kalik-Mayence-Fotografie',
+    titleAlt: `Benjamin May-Fotografie`,
+   
+   
+    description:"Benjamin May: Fotografie und mehr",
+   
   },
   plugins: [
     {
@@ -13,7 +18,8 @@ module.exports = {
       options: {
         navigation: [
           { name: `Portfolio`, slug: `/projects` },
-          { name: `Texte & ...`, slug: `/texte` },
+          { name: `Texte`, slug: `/texte` },
+          { name: `Museen`, slug: `/museum` },
           { name: `About`, slug: `/about` }
         ],
       },
@@ -37,7 +43,7 @@ module.exports = {
       options: {
         name: `Kalik-Mayence-Fotografie`,
         short_name: `Kalik`,
-        description: `Kaliks Fotos`,
+        description: `Benjamin May Fotos`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#b75e09`,

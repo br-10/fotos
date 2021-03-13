@@ -4,8 +4,8 @@ import React from 'react'
 const Impressum =()=>{
     return(
       <Layout >
-     <h1>kkkkk</h1>
-
+     <h1>Benjamin M</h1>
+     <p>sdfasdf</p>
       </Layout>
     )
 }
